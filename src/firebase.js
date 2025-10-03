@@ -13,7 +13,6 @@ if (!admin.apps.length) {
     // Fallback to environment variables or default credentials
     console.log('Service account key not found, using environment variables');
     admin.initializeApp({
-      credential: admin.credential.applicationDefault(),
       projectId: process.env.FIREBASE_PROJECT_ID || 'snpelectrical'
     });
   }

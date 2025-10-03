@@ -1,6 +1,6 @@
 const express = require('express');
 const { db } = require('../firebase');
-const { authenticateToken, requireTechnicianOrAdmin } = require('../middleware/auth');
+const { authenticateToken, requireTechnicianOrAdmin, requireAdmin } = require('../middleware/auth');
 const router = express.Router();
 
 // Get all jobs with customer and technician info
